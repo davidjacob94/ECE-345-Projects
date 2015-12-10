@@ -24,15 +24,9 @@ mM16 = mean(rM16, 2);
 mM100 = mean(rM100,2);
 
 
-%Creates histograms of pdf of each Mn
+
 [histm2, z] = hist(mM2, interval);
 histm2 = histm2/n/.001;
 
-[histm4, z] = hist(mM4, interval);
-histm4 = histm4/n/.001;
-
-[histm16, z] = hist(mM16, interval);
-histm16 = histm16/n/.001;
-
-[histm100, z] = hist(mM100, interval);
-histm100 = histm100/n/.001;
+[histm2, z] = hist(mM2, interval);
+histm2 = histm2/n/.001;

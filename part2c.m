@@ -35,7 +35,7 @@ normdist3=normdist3/.001/size;
  figure(i)
     subplot(3,1,1)
     plot(x1,normdist1,'-b')
-    title(sprintf('Aritmetic Mean Estimator (sigma = %f1.1)', o(i)) )
+    title(sprintf('Aritmetic Mean Estimator (sigma = %1.1f)', o(i)) )
     xlabel('Estimator value')
     ylabel('f(An)')
     
