@@ -77,3 +77,19 @@ plot(z, histm100,'-b', z, approx100, 'r')
 title('Precise vs Approximate (CLT) for n = 100')
 xlabel('Mean of X')
 ylabel('f(x)')
+
+
+%Creates Graphs containing CLT compared to CDF
+figure(2)
+subplot(1,2,1)
+plot(z, cumsum(histm2), '-g', z, cumsum(approx2), '-r')
+legend('CLT', 'Precise')
+title('Precise vs Approximate (CLT) CDF for n = 2');
+xlabel('Mean of X');
+ylabel('F(x)');
+
+subplot(1,2,2)
+plot(z, cumsum(histm100), '-g', z, cumsum(approx100), '-r')
+title('Precise vs Approximate (CLT) CDF for n = 100');
+xlabel('Mean of X');
+ylabel('F(x)');
